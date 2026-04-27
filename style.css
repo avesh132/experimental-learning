@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif; [cite: 20]
+    color: DarkSlateGray; [cite: 16]
+    line-height: 1.6;
+    background: linear-gradient(180deg, #FFFFFF 0%, LightSteelBlue 100%); [cite: 17]
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #000000; [cite: 15]
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border: 0.5px solid LightSteelBlue;
+    margin: 40px 0;
+}
+
+.services-grid {
+    display: grid; [cite: 32]
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 4px;
+    border-left: 5px solid DarkSlateGray;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    background: #FFFFFF;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: 50px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.btn {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: DarkSlateGray;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) { [cite: 33]
+    .container {
+        width: 95%;
+    }
+}
