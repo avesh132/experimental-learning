@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Portfolio - Level 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2C3E50;
+            line-height: 1.6;
+            background: linear-gradient(180deg, #FFFFFF 0%, #E8EFF7 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* HEADER STYLES */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #000000 0%, #1A1A1A 100%);
+            color: #FFFFFF;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* SECTION STYLES */
+        section {
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #2C3E50;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        h3 {
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* SERVICES GRID */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #2C3E50;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .card:hover {
+            background: #FFFFFF;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-left-color: #3498DB;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* CONTACT FORM */
+        .contact-section {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .contact-section h2 {
+            border-bottom: 3px solid #2C3E50;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 2px solid #DDD;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #2C3E50;
+        }
+
+        button {
+            background: #000000;
+            color: #FFFFFF;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2C3E50;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 50px;
+            border-top: 1px solid #DDD;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>PORTFOLIO</h1>
+            <p>Professional Freelance Graphic Designer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>PROJECT OVERVIEW</h2>
+            <p><strong>Objective:</strong> Create a clean, responsive, minimalist single-page portfolio.</p>
+            <p><strong>Technology:</strong> Built using clean HTML5 and CSS3.</p>
+            <p><strong>Efficiency:</strong> Text-based expertise showcase for fast loading.</p>
+        </section>
+
+        <section>
+            <h2>CORE EXPERTISE</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Logo Design</h3>
+                    <p>Brand identity creation and visual storytelling.</p>
+                </div>
+                <div class="card">
+                    <h3>Stationery</h3>
+                    <p>Corporate kits, business cards, and letterheads.</p>
+                </div>
+                <div class="card">
+                    <h3>Social Media</h3>
+                    <p>Engaging Instagram and Facebook graphics.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>Modern web and mobile app layouts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact for Inquiry</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Project Details" rows="4" required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>A high-performance, SEO-friendly portfolio designed for the modern freelance market.</p>
+        <p>&copy; 2026 | Future-Ready Portfolio</p>
+    </footer>
+
+</body>
+</html>
